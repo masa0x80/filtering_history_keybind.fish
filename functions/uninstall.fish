@@ -1,3 +1,3 @@
-functions -e __fzf_history
-bind | command grep __fzf_history | command cut -d ' ' -f 2 | read -l FZF_HISTORY_KEYBIND
-eval bind -e $FZF_HISTORY_KEYBIND
+functions -e __filtering_history
+bind | command grep __filtering_history | command cut -d ' ' -f 2 | read -l FILTERING_HISTORY_KEYBIND
+eval bind -e $FILTERING_HISTORY_KEYBIND
